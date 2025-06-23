@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ame et soins</title>
+  <title>Ame et Soins</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
 </head>
@@ -37,13 +37,10 @@
         doloribus ipsam ipsum architecto neque illum quam eligendi veniam sunt possimus officiis quos 
         perferendis nihil magni sapiente?</p>
     </div>
-    <div class="highlight-image">
-      <div class="carousel">
-        <img src="img1.jpg" alt="Image 1">
-        <img src="img2.jpg" alt="Image 2">
-        <img src="img3.jpg" alt="Image 3">
-      </div>
-    </div>
+
+<div class="highlight-image">
+  <img src="img/img1.jpg" alt="Portrait ou illustration" class="static-image">
+</div>
   </section>
 
   <section class="favorites" id="service">
@@ -86,18 +83,5 @@
     </p>
   </footer>
 
-  <script>
-    const images = document.querySelectorAll('.carousel img');
-    let current = 0;
-
-    function showNextImage() {
-      images[current].classList.remove('active');
-      current = (current + 1) % images.length;
-      images[current].classList.add('active');
-    }
-
-    images[current].classList.add('active');
-    setInterval(showNextImage, 3000);
-  </script>
 </body>
 </html>
